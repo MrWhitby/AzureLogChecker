@@ -21,8 +21,7 @@ class SignInLogAnalyzer:
 
         # Country selection dropdown with keyboard search functionality
         Label(self.root, text="Select Country:").grid(row=1, column=0, pady=5, sticky=W)
-        self.country_dropdown = CountrySearchDropdown(self.root,
-                                                      values=[country.name for country in pycountry.countries])
+        self.country_dropdown = CountrySearchDropdown(self.root)
         self.country_dropdown.grid(row=1, column=1, pady=5, sticky=W)
         self.country_dropdown.set("United Kingdom")  # Set a default value
 
@@ -95,8 +94,12 @@ class SignInLogAnalyzer:
 class CountrySearchDropdown(ttk.Combobox):
     def __init__(self, master, **kw):
         super().__init__(master, **kw)
-        self.countries = [country.name for country in pycountry.countries]
+        # List specific countries at the top followed by the rest
+        top_countries = ['United Kingdom', 'United States', 'Canada', 'United Arab Emirates']
+        rest_of_countries = [country.name for country in pycountry.countries if country.name not in top_countries]
+        self.countries = top_countries + ['------------'] + rest_of_countries
         self.filtered_countries = self.countries[:]
+        self['values'] = self.filtered_countries
         self.bind('<Key>', self.search_country)
 
     def search_country(self, event):
