@@ -16,27 +16,34 @@ class SignInLogAnalyzer:
         self.data = None
 
         # Set up GUI components
-        Label(self.root, text="Select Log File:").grid(row=0, column=0, pady=5, sticky=W)
-        Button(self.root, text="Open Log File", command=self.load_file).grid(row=0, column=1, pady=5, sticky=W)
+        Label(self.root, text="Select Log File:").grid(row=0, column=0, pady=5, sticky=E)
+        Button(self.root, text="Open Log File", command=self.load_file).grid(row=0, column=1, pady=5)
+        Label(self.root, text="").grid(row=0, column=2)  # Empty label for spacing
 
         # Country selection dropdown with keyboard search functionality
-        Label(self.root, text="Select Country:").grid(row=1, column=0, pady=5, sticky=W)
+        Label(self.root, text="Select Country:").grid(row=1, column=0, pady=5, sticky=E)
         self.country_dropdown = CountrySearchDropdown(self.root)
-        self.country_dropdown.grid(row=1, column=1, pady=5, sticky=W)
+        self.country_dropdown.grid(row=1, column=1, pady=5, sticky=W+E)  # Centered horizontally
         self.country_dropdown.set("United Kingdom")  # Set a default value
 
-        Button(self.root, text="Analyze", command=self.analyze_logs).grid(row=2, column=0, columnspan=2, pady=10)
+        Button(self.root, text="Analyze", command=self.analyze_logs).grid(row=2, column=0, columnspan=3, pady=10)
 
         self.result_label = Label(self.root, text="")
-        self.result_label.grid(row=3, column=0, columnspan=2, pady=10)
+        self.result_label.grid(row=3, column=0, columnspan=3, pady=10)
 
         # Scrolling Text Widget for detailed output
         self.details_text = scrolledtext.ScrolledText(self.root, wrap=WORD, height=10, width=70)
-        self.details_text.grid(row=4, column=0, columnspan=2, pady=10)
+        self.details_text.grid(row=4, column=0, columnspan=3, pady=10, sticky="nsew")
         self.details_text.config(state=DISABLED)  # Disable editing of the text widget
 
+        # Configure grid weights to make the elements centered
+        for i in range(5):
+            self.root.grid_rowconfigure(i, weight=1)
+        for i in range(3):
+            self.root.grid_columnconfigure(i, weight=1)
+
         # Read Me Button
-        Button(self.root, text="Read Me", command=self.open_readme).grid(row=5, column=1, pady=5, sticky=E)
+        Button(self.root, text="Read Me", command=self.open_readme).grid(row=5, column=2, pady=5, sticky=E)
 
     def load_file(self):
         self.filename = filedialog.askopenfilename(title="Select file", filetypes=(("CSV files", "*.csv"),))
@@ -73,7 +80,8 @@ class SignInLogAnalyzer:
         self.details_text.config(state=NORMAL)  # Enable editing to update text
         self.details_text.delete(1.0, END)  # Clear previous content
         for index, location in zip(indices, locations):
-            self.details_text.insert(END, f"Row {index}: {location}\n")
+            username = self.data.at[index, 'Username'] if 'Username' in self.data.columns else 'N/A'
+            self.details_text.insert(END, f"Row {index + 2}: {username}, {location}\n")  # Add 2 to index for 1-based row numbers
         self.details_text.config(state=DISABLED)  # Disable editing after update
 
     def open_readme(self):
@@ -84,6 +92,7 @@ class SignInLogAnalyzer:
         readme_text = scrolledtext.ScrolledText(readme_window, wrap=WORD, height=15, width=70)
         readme_text.pack(pady=10)
         readme_text.insert(END,
+                           "This Application is not for distribution nor public use - JW\n"
                            "1. Import your Azure Sign-in Logs - The exported logs should be only successful sign-ins and no other filters from default.\n"
                            "2. Select the country of your country's primary source of business.\n"
                            "   2a. If your business is located in the United Kingdom so sign-ins from outside the United Kingdom may be of concern, you would select United Kingdom.\n"
