@@ -1,38 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="53279188-2b71-416c-afb3-5eb203e29310" name="Changes" comment="v0.1">
-      <change afterPath="$PROJECT_DIR$/AzureLogChecker.py" afterDir="false" />
+    <list default="true" id="53279188-2b71-416c-afb3-5eb203e29310" name="Changes" comment="v0.3">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AzureLogCheckerGUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/AzureLogCheckerGUI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/AzureLogCheckerGUI/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/AzureLogCheckerGUI/EXE-00.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/AzureLogCheckerGUI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/dist/AzureLogCheckerGUI.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/MrWhitby/AzureLogChecker",
-    "accountId": "ffdfd435-5ef3-4fb3-aace-eef0adf9d238"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MrWhitby&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MrWhitby/AzureLogChecker&quot;,
+    &quot;accountId&quot;: &quot;ffdfd435-5ef3-4fb3-aace-eef0adf9d238&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2fSJB8otWG7DFIXuXTePpgQXe5X" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.AzureLogCheckerGUI.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -57,11 +77,37 @@
       <option name="project" value="LOCAL" />
       <updated>1713788495631</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="v0.1">
+      <option name="closed" value="true" />
+      <created>1713788824375</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713788824375</updated>
+    </task>
+    <task id="LOCAL-00003" summary="v0.2">
+      <option name="closed" value="true" />
+      <created>1713801980736</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713801980736</updated>
+    </task>
+    <task id="LOCAL-00004" summary="v0.3">
+      <option name="closed" value="true" />
+      <created>1713802728565</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713802728565</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.1" />
+    <MESSAGE value="v0.2" />
+    <MESSAGE value="v0.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.3" />
   </component>
 </project>
