@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53279188-2b71-416c-afb3-5eb203e29310" name="Changes" comment="v0.3">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AzureLogCheckerGUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/AzureLogCheckerGUI.py" afterDir="false" />
-    </list>
+    <list default="true" id="53279188-2b71-416c-afb3-5eb203e29310" name="Changes" comment="v0.4" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,7 +107,31 @@
       <option name="project" value="LOCAL" />
       <updated>1713847045602</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="v0.3">
+      <option name="closed" value="true" />
+      <created>1713848102048</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713848102048</updated>
+    </task>
+    <task id="LOCAL-00007" summary="v0.4">
+      <option name="closed" value="true" />
+      <created>1713848162264</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713848162264</updated>
+    </task>
+    <task id="LOCAL-00008" summary="v0.4">
+      <option name="closed" value="true" />
+      <created>1713848245715</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713848245715</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -118,6 +139,7 @@
     <MESSAGE value="v0.1" />
     <MESSAGE value="v0.2" />
     <MESSAGE value="v0.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="v0.3" />
+    <MESSAGE value="v0.4" />
+    <option name="LAST_COMMIT_MESSAGE" value="v0.4" />
   </component>
 </project>
